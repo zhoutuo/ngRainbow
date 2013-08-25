@@ -137,6 +137,9 @@ module.provider('rainbowBar', function () {
                         }
                         fadeTimerId = $window.requestAnimationFrame(loop);
                     })();
+                },
+                addProgress: function(percent) {
+                    progress(percent);
                 }
             }
 
